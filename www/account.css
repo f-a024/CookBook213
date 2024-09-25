@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #e27aff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+}
+
+.nav-links a:hover {
+  background-color: #b94ed6;
+  border-radius: 5px;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Sub Navigation for Account Page */
+.account-subnav {
+  background-color: #f0baff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #e27aff;
+}
+
+.account-subnav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.account-subnav li {
+  display: inline;
+}
+
+.account-subnav a {
+  color: #622174;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+}
+
+.account-subnav a:hover {
+  background-color: #e27aff;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Account Content */
+.account-content {
+  padding: 40px;
+  text-align: center;
+}
+
+.account-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.profile-section {
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Create Recipe Button */
+.create-recipe-button {
+  margin-bottom: 20px;
+}
+
+.create-recipe-button button {
+  padding: 10px 20px;
+  background-color: #e27aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-recipe-button button:hover {
+  background-color: #b94ed6;
+}
+
+/* Recipe Creation Form */
+#create-recipe-form {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#create-recipe-form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#create-recipe-form input,
+#create-recipe-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#create-recipe-form button {
+  padding: 10px 20px;
+  background-color: #e27aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#create-recipe-form button:hover {
+  background-color: #b94ed6;
+}
+
+/* Footer */
+footer {
+  background-color: #e27aff;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

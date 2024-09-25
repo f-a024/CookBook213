@@ -1,0 +1,47 @@
+<?php
+
+session_start();
+
+
+$username = $_SESSION['username'];
+$profilePicture = $_SESSION['profilePicture'];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="account-settings.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar code -->
+    </header>
+
+    <div class="account-content">
+        <div class="profile-section">
+            <!-- Display user profile picture -->
+            <img src="<?php echo $profilePicture; ?>" alt="Profile Picture" class="profile-pic">
+            <!-- Display user account info -->
+            <h1><?php echo $username; ?></h1>
+        </div>
+
+        <!-- Account settings navigation -->
+        <nav class="account-subnav">
+            <ul>
+                <li><a href="edit-profile.php">Edit Your Profile</a></li>
+                <li><a href="your-information.php">Your Information</a></li>
+                <li><a href="logout.php">Log Out</a></li>
+            </ul>
+        </nav>
+
+        <!-- Rest of the account page -->
+    </div>
+
+    <footer>
+        <!-- Footer code -->
+    </footer>
+</body>
+</html>

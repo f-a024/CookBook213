@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookBook - Account</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">CookBook</div>
+        <ul class="nav-links">
+          <li><a href="homepage.html">Home</a></li>
+          <li><input type="text" placeholder="Search..." class="search-bar" /></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="account-subnav">
+        <ul>
+            <li><a href="account-settings.html">Account Settings</a></li>
+            <li><a href="logout.php">Log Out</a></li>
+        </ul>
+    </div>
+
+    <div class="account-content">
+        <h1>Your Profile</h1>
+        <div class="profile-section">
+            <img src="default-profile.jpg" alt="Profile Picture" class="profile-pic">
+            <form action="upload-profile.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="profile-pic" accept="image/*">
+                <button type="submit">Upload Profile Picture</button>
+            </form>
+        </div>
+
+        <!-- Create a Recipe Section -->
+        <div class="create-recipe">
+            <h2>Create a Recipe</h2>
+            <form action="submit-recipe.php" method="post" enctype="multipart/form-data">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required><br><br>
+
+                <label for="recipe-desc">Description:</label><br>
+                <textarea id="recipe-desc" name="recipe-desc" rows="5" cols="40" required></textarea><br><br>
+
+                <label for="recipe-pdf">Upload Recipe PDF:</label>
+                <input type="file" id="recipe-pdf" name="recipe-pdf" accept="application/pdf" required><br><br>
+
+                <button type="submit">Submit Recipe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 CookBook. All rights reserved.</p>
+    </footer>
+</body>
+</html>
