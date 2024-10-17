@@ -1,69 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <title>COOKBOOK - REGISTER</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cook Book Recipes - Register</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="register.css" />
   </head>
   <body>
     <div class="container">
-      <div class="reg-container">
-        <div class="title">
-          <p class="reg-title">Register</p>
+      <div class="register">
+        <h1>Register</h1>
+      </div>
+
+      <form action="your-information.php" method="POST">
+        <div class="box1">
+          <label for="first-name">First name</label><br />
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="Write your given name..."
+            required
+          /><br />
         </div>
-        <div class="inputs">
-          <input
-            class="first-name"
-            type="text"
-            placeholder="First Name"
-            required
-          />
-          <p class="acc">First Name</p>
-          
-          <input
-            class="last-name"
-            type="text"
-            placeholder="Last Name"
-            required
-          />
-          <p class="acc">Last Name</p>
 
+        <div class="box2">
+          <label for="last-name">Last name</label><br />
           <input
-            class="username"
             type="text"
-            placeholder="Username"
+            id="last-name"
+            name="last-name"
+            placeholder="Write your surname..."
             required
-          />
-          <p class="acc">Username</p>
+          /><br />
+        </div>
 
+        <div class="box3">
+          <label for="username">Username</label><br />
           <input
-            class="birthdate"
-            type="date"
-            placeholder="Birthdate"
+            type="text"
+            id="username"
+            name="username"
+            maxlength="20"
+            placeholder="Write your username..."
             required
-          />
-          <p class="acc">Birthdate</p>
+          /><br />
+        </div>
 
+        <div class="box4">
+          <label for="birthdate">Birthdate</label><br />
+          <input type="date" id="birthdate" name="birthdate" required /><br />
+        </div>
+
+        <div class="box5">
+          <label for="password">Password</label><br />
           <input
-            class="password"
             type="password"
-            placeholder="Password"
+            id="password"
+            name="password"
+            placeholder="Input a password..."
             required
-          />
-          <p class="pass">Password</p>
+          /><br />
         </div>
-        <div class="buttons">
-          <a href="login.html"><button>Back</button></a>
-          <a href="homepage.html"><button type="submit">Sign up</button></a>
+
+        <div class="box6">
+          <a href="homepage.html"><button type="submit">Register</button></a>
         </div>
-      </div>
-      <div class="cookbook-container">
-        <img
-          src="logo.png"
-          alt="Cookbook Icon"
-        />
-      </div>
+
+        <div class="box7">
+          <p>
+            already have an account?
+            <a href="login.html"><span class="login-line">login</span></a>
+          </p>
+        </div>
+
+        <div class="box8">
+          <a href="homepage.html"><button type="button">Guest</button></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="img">
+      <img src="logo.png" alt="Cookbook logo" />
     </div>
   </body>
 </html>
