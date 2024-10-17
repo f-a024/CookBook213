@@ -1,129 +1,161 @@
-* {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  body {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: #f0baff;
-    display: flex;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: left;
-    gap:250px;
-  }
-  
-  .reg-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 2px solid white;
-    border-radius: 30px;
-    background-color: #e27aff;
-    height: 600px;
-    width: 458px;
-    padding: 10px;
-    margin-top: 150px;
-    margin-left: 200px;
-	font-style: italic;
-  }
-  
-  .title {
-    text-align: center;
-  }
-  
-  .reg-title {
-    font-size: 44px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  
-  .inputs {
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  .acc,
-  .pass {
-    margin-top: 10px;
-    margin-bottom: 50px;
-  }
-  
-  .email,
-  .password {
-    border: 2px solid #622174;
-    border-radius: 50px;
-    width: 80%;
-    height: 35px;
-    padding: 10px;
-    font-size: 18px;
-  }
-  
-  .buttons {
-    display: flex;
     justify-content: center;
-    gap: 140px;
-    margin-top: 0px;
-  }
-  
-  button {
-    border: 1px solid #622174;
-    border-radius: 40px;
-    height: 60px;
-    width: 120px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-  }
-  
-  button:hover {
-    background-color: #f7daff;
-  }
-  
-  button:active {
-    background-color: #b94ed6;
-    color: white;
-  }
-  
-  .cookbook-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 100px;
-  }
-  
-  .cookbook-container img {
-    object-position: center;
-    object-fit: contain;
-    height: 700px;
-    width: 700px;
-    margin-top: 120px;
-    margin-left: 0px;
-    
-  }
-  .forgot-pass-container {
-	  text-align: center;
-	  margin-bottom: 10px;
-  }
-  
-  .forgot-pass {
-	  font-size: 16px;
-	  text-decoration: none;
-	  color: #622174;
-  }
-  
-  .forgot-pass: hover {
-	  text-decoration: underline;
-  }
-  span.psw {
-    float: right;
-    padding: 0 164px;
-  }
-  span.code {
-    float: right;
-    padding: 0 180px;
-  }
+    border: 1px solid black;
+    border-radius: 50px;
+    border-color: white;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: #e587ff;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    position: relative;
+    top: 200px;
+    margin: auto;
+}
+
+.recover {
+    position: absolute;
+    top: 30px;
+    width: fit-content;
+}
+
+.recover h1 {
+    font-family: Segoe Script;
+    font-size: 50px;
+	color: #f0baff;
+	text-shadow: -1px -1px 0 #7129ab, 1px -1px 0 #7129ab, 1px 1px 0 #7129ab, 1px 1px 0 #7129ab;
+}
+
+.input1 {
+    position: relative;
+    top: 0;
+    width: fit-content;
+}
+
+.input1 label {
+    position: relative;
+	left: 15px;
+	font-family: Bahnschrift;
+	color: #54325e;
+}
+
+.input1 input {
+    height: 40px;
+    width: 250px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.input2 {
+    position: relative;
+    top: 30px;
+    width: fit-content;
+}
+
+.input2 input {
+    height: 40px;
+    width: 250px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn1 {
+    position: absolute;
+    top: 266px;
+    left: 70%;
+    width: fit-content;
+}
+
+.btn1 button {
+    height: 28px;
+    width: 50px;
+    border: none;
+    border-radius: 16px;
+    background-color: #8c28a8ad;
+    color: #f7dbff;
+    font-family: Bahnschrift;
+}
+
+.btn1 button:hover {
+    background-color: rgb(230, 230, 230);
+    color: #54325e;
+}
+
+.btn1 button:active {
+    transition: transform 125ms;
+    transform: translateY(-1px);
+}
+
+.btn2 {
+    position: relative;
+    top: 70px;
+    left: 70%;
+    width: fit-content;
+}
+
+.btn2 button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e587ff;
+    font-family: Bahnschrift semibold;
+}
+
+.btn2 button:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	background-color: #f0baff;
+	transition: transform 125ms;
+    transform: translateY(-2px);
+}
+
+.btn2 button:active {
+	color: white;
+	background-color: #e587ff;
+	border: 1px solid #7129ab;
+    	cursor: pointer;
+}
+
+.back {
+	position: relative;
+	top: 20px;
+	right: 110px;
+	width: fit-content;
+}
+
+.back button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e587ff;
+    font-family: Bahnschrift semibold;
+}
+
+.back button:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	background-color: #f0baff;
+	transition: transform 125ms;
+    transform: translateY(-2px);
+}
+
+.back button:active {
+	color: white;
+	background-color: #e587ff;
+	border: 1px solid #7129ab;
+    cursor: pointer;
+}
