@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0baff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    border-color: white;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: #e587ff;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    position: relative;
+    top: 200px;
+    margin: auto;
+}
+
+.recover {
+    position: absolute;
+    top: 30px;
+    width: fit-content;
+}
+
+.recover h1 {
+    font-family: Segoe Script;
+    font-size: 50px;
+	color: #f0baff;
+	text-shadow: -1px -1px 0 #7129ab, 1px -1px 0 #7129ab, 1px 1px 0 #7129ab, 1px 1px 0 #7129ab;
+}
+
+.input1 {
+    position: relative;
+    top: 0;
+    width: fit-content;
+}
+
+.input1 label {
+    position: relative;
+	left: 15px;
+	font-family: Bahnschrift;
+	color: #54325e;
+}
+
+.input1 input {
+    height: 40px;
+    width: 250px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.input2 {
+    position: relative;
+    top: 30px;
+    width: fit-content;
+}
+
+.input2 input {
+    height: 40px;
+    width: 250px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn1 {
+    position: absolute;
+    top: 266px;
+    left: 70%;
+    width: fit-content;
+}
+
+.btn1 button {
+    height: 28px;
+    width: 50px;
+    border: none;
+    border-radius: 16px;
+    background-color: #8c28a8ad;
+    color: #f7dbff;
+    font-family: Bahnschrift;
+}
+
+.btn1 button:hover {
+    background-color: rgb(230, 230, 230);
+    color: #54325e;
+}
+
+.btn1 button:active {
+    transition: transform 125ms;
+    transform: translateY(-1px);
+}
+
+.btn2 {
+    position: relative;
+    top: 70px;
+    left: 70%;
+    width: fit-content;
+}
+
+.btn2 button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e587ff;
+    font-family: Bahnschrift semibold;
+}
+
+.btn2 button:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	background-color: #f0baff;
+	transition: transform 125ms;
+    transform: translateY(-2px);
+}
+
+.btn2 button:active {
+	color: white;
+	background-color: #e587ff;
+	border: 1px solid #7129ab;
+    cursor: pointer;
+}
+
+.back {
+    position: relative;
+    top: 20px;
+    right: 110px;
+    width: fit-content;
+}
+
+.back button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e587ff;
+    font-family: Bahnschrift semibold;
+}
+
+.back button:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	background-color: #f0baff;
+	transition: transform 125ms;
+    	transform: translateY(-2px);
+}
+
+.back button:active {
+	color: white;
+	background-color: #e587ff;
+	border: 1px solid #7129ab;
+    	cursor: pointer;
+}
