@@ -3,42 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylelogin.css" />
-    <title>login</title>
+    <title>COOKBOOK | LOGIN</title>
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="reg-container">
-        <div class="title">
-          <p class="reg-title">Log in</p>
-        </div>
-        <div class="inputs">
+    <div class="page"></div>
+
+    <div class="log-container">
+      <div class="login">
+        <h1>Login</h1>
+      </div>
+
+      <form action="" method="post">
+        <div class="box1">
+          <label for="username"> Username </label>
+          <br />
+
           <input
-            class="email"
             type="text"
-            placeholder="Email Address"
+            name="username"
+            id="username"
+            placeholder="Enter your username..."
+            maxlength="15"
             required
           />
-          <p class="acc">Account</p>
+        </div>
+
+        <div class="box2">
+          <label for="password"> Password </label>
+          <br />
+
           <input
-            class="password"
             type="password"
-            placeholder="Password"
+            name="password"
+            id="password"
+            placeholder="Enter your password..."
             required
           />
-          <p class="pass">Password</p>
         </div>
-        <div class="buttons">
-          <a href="register.html"><button>Register</button></a>
-          <a href="homepage.html"><button type="submit">Sign In</button></a>
+
+        <div class="box3">
+          <a href="forgot.html">
+            <p>forgot password?</p>
+          </a>
         </div>
-      </div>
-      <div class="cookbook-container">
-        <img
-          src="logo.png"
-          alt="Cookbook Icon"
-        />
-      </div>
+
+        <div class="box4">
+          <a href="homepage.html">
+            <button type="submit">Login</button>
+          </a>
+        </div>
+
+        <div class="box5">
+          <a href="register.html">
+            <button type="button">Register</button>
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <div class="img">
+      <img src="logo.png" alt="Cookbook logo" />
     </div>
   </body>
 </html>
